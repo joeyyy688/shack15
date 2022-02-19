@@ -22,7 +22,7 @@ void main() {
     final availableSeatsWidget = find.byKey(const ValueKey('availableSeats'));
     final bottomNavBarWidget = find.byKey(const ValueKey('bottomNavBar'));
 
-    // Build our app and trigger a frame.
+    // Build app and trigger frame.
     await tester.pumpWidget(
       const MaterialApp(
         initialRoute: '/',
