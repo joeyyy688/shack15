@@ -1,4 +1,4 @@
-# shack15 Mobile Application
+# SHACK15 Mobile Application
 
 A new home page for the SHACK15 mobile app (UI Clone).
 
@@ -8,13 +8,13 @@ A new home page for the SHACK15 mobile app (UI Clone).
 
 
 
-### Screenshot from iOS Device
+### Screenshots from iOS Device
 |  |  |
 |---|---|
 |<img src="screenshots/ui(code)1.png" height="500em" />| <img src="screenshots/ui(code)2.png" height="500em" />|
 
 
-### Screenshot from Android Device
+### Screenshots from Android Device
 |  |  |
 |---|---|
 |<img src="screenshots/Androidui(code1).png" height="500em" />|<img src="screenshots/Androidui(code2).png" height="500em" />|
@@ -47,10 +47,15 @@ git clone https://github.com/joeyyy688/shack15.git
 - After some few seconds the project should successfully build on the desired mobile device selected
 - Incase you encountered some issues, post them to [stackoverflow](https://stackoverflow.com/) for answers from the community
 
-### To Build release version
+### To Build Release Version
 
 ```
 run: flutter build <OS PLATFORM> --release 
 for example `flutter build ios --release` to build iOS release app 
 or `flutter build apk` to build Android release apk
 ```
+
+### Built With
+
+- [Visual Studio Code](https://docs.flutter.dev/development/tools/vs-code) - How to use VScode for flutter app development
+- [Flutter](https://flutter.dev) - Flutter Official website
