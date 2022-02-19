@@ -23,28 +23,43 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: const [
-            IntroductionWidget(),
+            IntroductionWidget(
+              key: Key('introWidget'),
+            ),
             SubScreenDivider(
+              key: Key('subScreenDivider'),
               text: 'In Shack Now',
             ),
-            CAvatarsWidget(),
-            Shack15Menus(),
+            CAvatarsWidget(
+              key: Key('cavatars'),
+            ),
+            Shack15Menus(
+              key: Key('menus'),
+            ),
             SubScreenDivider(
               text: 'Send a token of gratitude',
             ),
-            TokenNotesWidget(),
+            TokenNotesWidget(
+              key: Key('tokenNotes'),
+            ),
             SubScreenDivider(
               text: 'Latest News',
             ),
-            LastestNewsWidget(),
+            LatestNewsWidget(
+              key: Key('latestNews'),
+            ),
             SubScreenDivider(
               text: 'Rooms Available Now',
             ),
-            AvailableSeatsWidget()
+            AvailableSeatsWidget(
+              key: Key('availableSeats'),
+            )
           ],
         ),
       ),
-      bottomNavigationBar: const BottomNavBarWidget(),
+      bottomNavigationBar: const BottomNavBarWidget(
+        key: Key('bottomNavBar'),
+      ),
     );
   }
 }

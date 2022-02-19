@@ -64,7 +64,7 @@ final menusData = [
   Menus(
     id: 2,
     image: Image.asset('assets/images/IMG_1069_1.png'),
-    title: 'BREAK FAST',
+    title: 'BREAKFAST',
   ),
   Menus(
     id: 3,

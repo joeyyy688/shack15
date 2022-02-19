@@ -5,14 +5,14 @@ import 'package:line_icons/line_icons.dart';
 import 'package:shack15/constants/data.dart';
 import 'package:shack15/mediaQuery/sizeHelpers.dart';
 
-class LastestNewsWidget extends StatefulWidget {
-  const LastestNewsWidget({Key? key}) : super(key: key);
+class LatestNewsWidget extends StatefulWidget {
+  const LatestNewsWidget({Key? key}) : super(key: key);
 
   @override
-  State<LastestNewsWidget> createState() => _LastestNewsWidgetState();
+  State<LatestNewsWidget> createState() => _LatestNewsWidgetState();
 }
 
-class _LastestNewsWidgetState extends State<LastestNewsWidget> {
+class _LatestNewsWidgetState extends State<LatestNewsWidget> {
   late ScrollController latestNewsScrollController = ScrollController();
 
   @override
