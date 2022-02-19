@@ -1,5 +1,6 @@
 # SHACK15 Mobile Application
 
+
 A new home page for the SHACK15 mobile app (UI Clone).
 
 ### UI Design
@@ -54,6 +55,30 @@ run: flutter build <OS PLATFORM> --release
 for example `flutter build ios --release` to build iOS release app 
 or `flutter build apk` to build Android release apk
 ```
+
+### Run test using IntelliJ or VSCode
+#### IntelliJ 
+
+* Open the widget_test.dart file
+* Select the Run menu
+* Click the Run 'tests in widget_test.dart' option
+* Alternatively, use the appropriate keyboard shortcut for yourplatform.
+
+
+#### VSCode
+* Open the widget_test.dart file
+* Select the Run menu
+* Click the Start Debugging option
+* Alternatively, use the appropriate keyboard shortcut for your platform.
+
+
+### Run test in a terminal
+
+You can also use a terminal to run the tests by executing the following command from the root of the project:
+```
+flutter test test/widget_test.dart
+```
+
 
 ### Built With
 

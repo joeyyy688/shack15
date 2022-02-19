@@ -8,9 +8,3 @@ class CAvatar {
 
   CAvatar({required this.id, required this.image});
 }
-
-
-    // CardStructureforHomeView(
-    //     id: 4,
-    //     image: Image.asset('assets/images/3053654.png'),
-    //     title: 'Beneficiaries'),
