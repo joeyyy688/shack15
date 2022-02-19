@@ -20,6 +20,8 @@ A new home page for the SHACK15 mobile app (UI Clone).
 |---|---|
 |<img src="screenshots/Androidui(code1).png" height="500em" />|<img src="screenshots/Androidui(code2).png" height="500em" />|
 
+### Font Used
+* [Poppins](https://fonts.google.com/specimen/Poppins)
 
 
 <!-- This project is a starting point for a Flutter application. -->
