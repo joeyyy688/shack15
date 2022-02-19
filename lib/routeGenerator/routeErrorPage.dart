@@ -17,38 +17,35 @@ class _RouteErrorPageState extends State<RouteErrorPage> {
   Widget build(BuildContext context) {
     return CustomNotificationBar(
       child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,
+        backgroundColor: Theme.of(context).backgroundColor,
         appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.background,
+          backgroundColor: Theme.of(context).backgroundColor,
           centerTitle: true,
           automaticallyImplyLeading: false,
           elevation: 0,
-          leading: AppBar(),
           title: Text(
             'Page Error',
-            style: TextStyle(
-              fontSize: textSizeMedium,
-              color: Theme.of(context).primaryColor,
-              //fontWeight: FontWeight.bold,
-            ),
+            style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                  fontSize: textSizeMedium,
+                ),
           ),
         ),
         body: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                  color: Theme.of(context).colorScheme.background,
+          child: Center(
+            child: Column(
+              children: [
+                Container(
                   padding: const EdgeInsets.only(top: 50),
                   child:
-                      Lottie.asset('assets/animation/error.json', height: 200)),
-              Text(
-                'Page Not Available!',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: Theme.of(context).primaryColor,
-                    fontSize: textSizeMedium),
-              )
-            ],
+                      Lottie.asset('assets/animations/error.json', height: 200),
+                ),
+                Text(
+                  'Page Not Available!',
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.headline4,
+                )
+              ],
+            ),
           ),
         ),
       ),
