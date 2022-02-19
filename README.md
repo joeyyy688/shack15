@@ -9,13 +9,15 @@ A new home page for the SHACK15 mobile app (UI Clone).
 
 
 ### Screenshot from iOS Device
+|  |  |
+|---|---|
+|<img src="screenshots/ui(code)1.png" height="500em" />| <img src="screenshots/ui(code)2.png" height="500em" />|
 
-<img src="screenshots/ui(code)1.png" height="500em" />
-<img src="screenshots/ui(code)2.png" height="500em" />
 
 ### Screenshot from Android Device
-<img src="screenshots/Androidui(code1).png" height="500em" />
-<img src="screenshots/Androidui(code2).png" height="500em" />
+|  |  |
+|---|---|
+|<img src="screenshots/Androidui(code1).png" height="500em" />|<img src="screenshots/Androidui(code2).png" height="500em" />|
 
 
 
