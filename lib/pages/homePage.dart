@@ -1,7 +1,15 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:line_icons/line_icons.dart';
+import 'package:shack15/widgets/appBar.dart';
+import 'package:shack15/widgets/availableSeatsWidget.dart';
+import 'package:shack15/widgets/bottomNavBarWidget.dart';
+import 'package:shack15/widgets/cAvatarWidget.dart';
+import 'package:shack15/widgets/introductionImage.dart';
+import 'package:shack15/widgets/latestNewsWidget.dart';
+import 'package:shack15/widgets/menuWidget.dart';
+import 'package:shack15/widgets/subScreenDivider.dart';
+import 'package:shack15/widgets/tokenNotesWidget.dart';
 
 class HomePage extends StatelessWidget {
   static const routeName = '/';
@@ -11,31 +19,32 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).backgroundColor,
-        leading: IconButton(
-          icon: Icon(
-            LineIcons.chevronUp,
-            size: 27,
-            color: Theme.of(context).primaryColor,
-          ),
-          onPressed: null,
-        ),
-        elevation: 0,
-        actions: [
-          IconButton(
-            icon: Icon(
-              LineIcons.user,
-              size: 27,
-              color: Theme.of(context).primaryColor,
+      appBar: const HomePageAppBar(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [
+            IntroductionWidget(),
+            SubScreenDivider(
+              text: 'In Shack Now',
             ),
-            onPressed: null,
-          ),
-        ],
+            CAvatarsWidget(),
+            Shack15Menus(),
+            SubScreenDivider(
+              text: 'Send a token of gratitude',
+            ),
+            TokenNotesWidget(),
+            SubScreenDivider(
+              text: 'Latest News',
+            ),
+            LastestNewsWidget(),
+            SubScreenDivider(
+              text: 'Rooms Available Now',
+            ),
+            AvailableSeatsWidget()
+          ],
+        ),
       ),
-      body: const Center(
-        child: Text('Home'),
-      ),
+      bottomNavigationBar: const BottomNavBarWidget(),
     );
   }
 }

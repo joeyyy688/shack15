@@ -7,6 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class ThemeModel with ChangeNotifier {
   ThemeMode _mode;
   ThemeMode get mode => _mode;
+  /* Light ThemeMode Theme is always set on start of application */
   ThemeModel({ThemeMode mode = ThemeMode.light}) : _mode = mode;
 
   void changeApplicationTheme(ThemeMode selectedTheme, String theme) async {

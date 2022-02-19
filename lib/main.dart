@@ -35,8 +35,9 @@ class MyApp extends StatelessWidget {
       return MaterialApp(
         title: 'SHACK15',
         themeMode: themeModel.mode,
-        theme: lighThemeData(),
-        darkTheme: darkThemeData(),
+        theme: lighThemeData(context),
+        /*Dark Theme Colors are not yet certain (confirmed) hence it being commented out */
+        //darkTheme: darkThemeData(),
         initialRoute: '/',
         onGenerateRoute: RouteGenerator.generateRoute,
         debugShowCheckedModeBanner: false,

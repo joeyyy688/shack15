@@ -3,6 +3,8 @@
 /* font sizes*/
 import 'package:flutter/material.dart';
 
+const textSize10 = 10.0;
+const textSize11 = 11.0;
 const textSizeSmall = 12.0;
 const textSizeSMedium = 14.0;
 const textSizeMedium = 16.0;
@@ -22,4 +24,4 @@ FontWeight fontWeightBold500 = FontWeight.w500;
 FontWeight fontWeightBold400 = FontWeight.w400;
 FontWeight fontWeightBold300 = FontWeight.w300;
 FontWeight fontWeightBold = FontWeight.bold;
-FontWeight fontWeightPrimary = FontWeight.normal;
+FontWeight fontWeightNormal = FontWeight.normal;
